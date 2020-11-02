@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modales!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <header>
+        <h1>Turno BOT</h1>
+    </header>
+    <div id="contenedor">
+        <div class="btn-turno" id="entrevistas" data-tipo-modal='entrevista'>Entrevista</div>
+        <div class="btn-turno" id="ventas" data-tipo-modal='venta'>Ventas</div>
+        <div class="btn-turno" id="reclamos" data-tipo-modal='reclamo'>Reclamos</div>        
+    </div>
+
+    <div class="contenedor-modal">
+        <div class='modal'>
+            <span class="cancel">x</span>
+            <p id='titulo'>Solicitá una Entrevista!</p>
+            <form>
+                <input type='text' placeholder='Nombre' id='nombre'></input>
+                <input type='text' placeholder='Apellido' id='apellido'></input>
+                <input type='text' placeholder='Teléfono' id='telefono'></input>
+                <textarea placeholder='Cualquier comentario que nos quieras dejar' id='observaciones'></textarea>
+                <input type='hidden' id='tipo-pedido'></input>
+                <input type='submit' id='boton-enviar' value='Enviar'>
+            </form>
+            <div class="cleaner"></div>
+        </div>
+    </div>
+
+    <script src="modales.js"></script>
+</body>
+</html>
